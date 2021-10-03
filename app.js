@@ -12,14 +12,22 @@ const createSlide = () => {
     let imgElement = document.createElement('img');
     let content = document.createElement('div');
     let h1 = document.createElement('h1');
+    let small = document.createElement('small');
     let p = document.createElement('p');
+    let h2 = document.createElement('h2');
+
 
     //attaching all elements
     imgElement.appendChild(document.createTextNode(''));    
     h1.appendChild(document.createTextNode(movies[slideIndex].name));
+    small.appendChild(document.createTextNode(movies[slideIndex].moreInfo));
     p.appendChild(document.createTextNode(movies[slideIndex].des));
+    h2.appendChild(document.createTextNode(movies[slideIndex].watch));
     content.appendChild(h1);
+    content.appendChild(small);
     content.appendChild(p);
+    content.appendChild(h2);
+
     slide.appendChild(content);
     slide.appendChild(imgElement);
     carousel.appendChild(slide);
@@ -32,7 +40,9 @@ const createSlide = () => {
     slide.className= 'slider';
     content.className= 'slide-content';
     h1.className= 'movie-title';
+    small.className= 'more-info'
     p.className= 'movie-des';
+    h2.className= 'watch-movie';
 
     sliders.push(slide)
 

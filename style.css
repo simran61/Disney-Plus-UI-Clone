@@ -101,7 +101,6 @@ body{
     height: 100%;
     position: relative;
     margin: auto;
-    background: black;
 }
 
 .slider{
@@ -138,14 +137,32 @@ body{
     padding-left: 50px;
     text-transform: capitalize;
     margin-top: 80px;
+    margin-bottom: 10px;
+}
+
+.more-info{
+    width: 80%;
+    line-height: 30px;
+    padding-left: 50px;
+    opacity: 0.5;
+    font-size: 15px;
 }
 
 .movie-des{
     width: 80%;
     line-height: 30px;
     padding-left: 50px;
-    margin-top: 30px;
+    margin-top: 10px;
     opacity: 0.8;
+}
+
+.watch-movie{
+    width: 80%;
+    line-height: 30px;
+    padding-left: 50px;
+    margin-top: 40px;
+    opacity: 0.8;
+    font-size: 20px;
 }
 
 .video-card-container{
